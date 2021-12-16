@@ -13,12 +13,40 @@
   height: auto;
   background-color: hsl(216, 50%, 16%);
   border-radius: 12px;
+  box-shadow: -4px 2px 22px 34px #0a1424;
+}
+
+.container__image {
+  position: relative;
+}
+
+.container__image:hover {
+  .container__eyes {
+    display: flex;
+    position: absolute;
+    width: 254px;
+    left: 23px;
+    top: 25px;
+    height: 255px;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .eyes {
+    background: url('./../assets/images/icon-view.svg') no-repeat hsl(178, 100%, 50%);
+    background-position: center;
+    width: 100%;
+  }
+
+  .image {
+    opacity: 0.5;
+  }
 }
 
 .image {
   background-size: contain;
   display: flex;
   width: 85%;
+  cursor: pointer;
   margin: 25px auto;
   border-radius: 8px;
 }
@@ -34,6 +62,11 @@
   color: hsl(0, 0%, 100%);
   font-weight: bold;
   font-size: 18px;
+
+  &:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+  }
 }
 
 .description {
@@ -95,4 +128,17 @@ hr {
 
 .name__of__creation {
   color: hsl(0, 0%, 100%);
+
+  &:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .container__card {
+    width: 90%;
+    height: auto;
+    margin: 18px auto;
+  }
 }
