@@ -1,0 +1,98 @@
+.container__card {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: auto;
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 12px;
+}
+
+.image {
+  background-size: contain;
+  display: flex;
+  width: 85%;
+  margin: 25px auto;
+  border-radius: 8px;
+}
+
+.container__item {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  margin: 10px auto;
+}
+
+.title {
+  color: hsl(0, 0%, 100%);
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.description {
+  color: hsl(214, 22%, 43%);
+  margin: 20px 0;
+  line-height: 1.4;
+}
+
+.priceAndDays {
+  display: flex;
+  justify-content: space-between;
+}
+
+.margin {
+  margin-right: 5px;
+}
+
+.container__detail {
+  display: flex;
+  align-items: center;
+}
+
+.price__label {
+  font-size: 14px;
+  color: hsl(178, 100%, 50%);
+}
+
+.days__label {
+  font-size: 14px;
+  color: hsl(214, 22%, 43%);
+}
+
+hr {
+  width: 96%;
+  margin: 20px auto;
+  border: 1px solid hsl(214, 22%, 43%);
+}
+
+.container__avatar {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  height: auto;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.avatar {
+  display: flex;
+  width: 30px;
+  border: 2px solid white;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.label__avatar {
+  color: hsl(214, 22%, 43%);
+}
+
+.name__of__creation {
+  color: hsl(0, 0%, 100%);
+}
